@@ -1,4 +1,4 @@
-package sc01_basicsytantax.EX03_ConsoleOutput;
+package sec01_basicsytantax.EX03_ConsoleOutput;
 
 public class ConsoleOutput {
 
