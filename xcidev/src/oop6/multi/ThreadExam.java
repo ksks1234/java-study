@@ -1,4 +1,8 @@
 package oop6.multi;
+//자바는 클래스 다중 상속을 지원하지 않지만,
+//인터페이스는 여러 개 구현할 수 있어서 다중 상속처럼 동작하게 할 수 있다.
+//Runnable은 인터페이스이며, Thread도 Runnable을 구현한 클래스이다.
+//이 예제에서는 Runnable을 구현한 ThreadExam 객체를 Thread 생성자에 넣어 실행시킨다.
 
 class Important {
 	
