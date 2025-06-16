@@ -4,6 +4,14 @@ public class Book {
 	private String title;		// 책 제목
 	private String author;		// 지은이
 	private boolean isRented;	// 도서 대출 가능 여부
+	int a;
+	int b;
+	int c;
+	
+	public Book () {
+		this("공룡", "야용");
+	}
+	
 	
 	// 책 제목과 저자를 받아 초기화, 대여 상태는 기본값 false
 	public Book(String title, String author) {
@@ -19,7 +27,7 @@ public class Book {
 	public void rent() {
 		if(!this.isRented) {
 			this.isRented = true;
-			System.out.println("책을 대여하였습니다.");
+			System.out.println(">> '" +this.title +"' 대여 성공!");
 		} else {
 			System.out.println("이미 대여되었거나, 대여할 수 없는 책입니다.");
 		}
@@ -32,7 +40,7 @@ public class Book {
 	public void returnBook() {
 		if(this.isRented) {
 			this.isRented = false;
-			System.out.println("책을 반납하였습니다.");
+			System.out.println(">> '" +this.title +"' 반납 완료!");
 		} else {
 			System.out.println("이미 반납되거나, 반납할 수 없는 책입니다.");
 		}
@@ -43,7 +51,7 @@ public class Book {
 	public void printInfo() {
 		String state;
 		if(this.isRented) {
-			state = "대여불가능";
+			state = "대여중";
 		} else {
 			state = "대여가능";
 		}

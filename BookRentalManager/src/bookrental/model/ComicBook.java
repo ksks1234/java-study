@@ -10,6 +10,7 @@ public class ComicBook extends Book {
 	
 	@Override
 	public void printInfo() {
+		super.printInfo();
 		System.out.println("(장르: " + genre + ")");
 	}
 }

@@ -10,6 +10,7 @@ public class ScienceBook extends Book {
 	
 	@Override
 	public void printInfo() {
+		super.printInfo();
 		System.out.println("(분야: " + field + ")");
 	}
 	
