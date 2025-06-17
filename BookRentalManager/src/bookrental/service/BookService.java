@@ -1,3 +1,4 @@
+// 책 목록 출력, 책 대여 및 반납, 책의 index 범위 확인
 package bookrental.service;
 
 import bookrental.model.Book;
@@ -40,9 +41,10 @@ public class BookService {
 	}
 	
 	public boolean isValidIndex(int index) {
-		if(this.books[index] == null) {
-			return false;
+		if(index >= 0 && index < this.books.length) {
+			return true;
 		}
-		return true;
+		System.out.println("올바른 범위의 숫자를 입력해 주세요");
+		return false;
 	}
 }
