@@ -6,7 +6,7 @@ import java.util.Scanner;
  * 컴퓨터가 만든 1~99 사이의 값을 맞추는 UpDown 게임을 작성
  * System.out.println("맞았습니다. 컴퓨터가 생각하던 값은 " + n + "입니다."); // 몇 번의 시도만에 맞췄는지 출력
  * 
- * switch-cast를 자바 7버전 이하로 작성
+ * switch-case를 자바 7버전 이하로 작성
  */
 public class ExceptionTest5 {
 	public static void main(String[] args) {
