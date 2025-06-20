@@ -4,7 +4,7 @@ package sec03_threadproperties.EX02_ThreadProperties_2;
 class MyThread extends Thread {
 	@Override
 	public void run() {
-		for(long i = 0; i < 200_000_000; i++) {} // 시간 지연용 
+		for(long i = 0; i < 1_000_000_000_000_000_000L; i++) {} // 시간 지연용 
 		System.out.println(getName()+ " 우선순위 : " + getPriority());
 	}
 	

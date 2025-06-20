@@ -21,7 +21,7 @@ public class ThreadProperties_1 {
 			thread.setName(i + "번째 쓰레드");
 			System.out.println(thread.getName());
 			thread.start();
-		}
+		} 
 		// 쓰레드 이름 직접 지정 2 - 생성자로 이름 지정
 		for(int i = 0; i < 3; i++) {
 			Thread thread = new Thread(i + "번째 쓰레드");

@@ -12,7 +12,7 @@ class MyThread extends Thread {
 				 Thread.yield();
 			} else {
 				System.out.println(getName() + " 실행");
-				for (long i = 0; i < 1000000000L; i++) {
+				for (long i = 0; i < 10000000000000L; i++) {
 				} // 시간지연
 			}
 		}
@@ -22,21 +22,18 @@ class MyThread extends Thread {
 public class YieldInRunnableState {
 	public static void main(String[] args) {
 		MyThread thread1 = new MyThread();
-		thread1.setName("thread1);");
+		thread1.setName("thread1");
 		thread1.yieldFlag = false;
 		thread1.setDaemon(true);
 		thread1.start();
 
 		MyThread thread2 = new MyThread();
-		thread2.setName("thread2);");
+		thread2.setName("thread2");
 		thread2.yieldFlag = true;
 		thread2.setDaemon(true);
 		thread2.start();
 
-		// 쓰레드 상태 저장 클래스
-		Thread.State state;
-
-		// 1. 객체 생성(NEW);
+		// 6초 지연(1초마다 한 번씩 양보)
 		for (int i = 0; i < 6; i++) {
 			try {
 				Thread.sleep(1000);
