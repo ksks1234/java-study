@@ -8,5 +8,6 @@
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="lib" path="C:/dev/eclipse-jee-2025-03-R-win32-x86_64/eclipse/lombok.jar"/>
 	<classpathentry kind="lib" path="C:/dev/mylib/commons-codec-1.18.0/commons-codec-1.18.0.jar"/>
+	<classpathentry kind="lib" path="C:/app/KOSA/product/21c/dbhomeXE/jdbc/lib/ojdbc11.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
