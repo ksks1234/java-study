@@ -23,7 +23,10 @@ public class XCI1SelectExample {
 					NAME,
 					BIRTH,
 					JOIN_DATE
-				FROM XCI_MEMBERS
+				FROM 
+					XCI_MEMBERS
+				ORDER BY 
+					BIRTH DESC
 				"""; // 쿼리 안에 세미콜론 절때 넣으면 안됨
 		try (Connection conn = DriverManager.getConnection(URL, USER, PASSWORD);
 				Statement stmt = conn.createStatement();
