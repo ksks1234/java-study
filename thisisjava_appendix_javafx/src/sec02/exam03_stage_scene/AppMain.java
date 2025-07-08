@@ -34,7 +34,7 @@ public class AppMain extends Application {
 		Label label = new Label(); 			// 라벨 컨트롤 생성
 		label.setText("Hello, JavaFX"); 	// text 속성 설정
 		label.setFont(new Font(50));		// Font 속성 설정(글자 크기)
-		
+
 		Button button = new Button(); 		// 버튼 컨트롤 생성
 		button.setText("확인"); 			// text 속성 설정(버튼 내용)
 		button.setOnAction(event -> Platform.exit()); 	//  클릭 이벤트 처리
